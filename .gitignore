@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+.gradio/
+app.log
+app.err
+.qodo/
