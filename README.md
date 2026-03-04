@@ -4,6 +4,10 @@ Simple project for uploading **any PDF**, indexing it once, then:
 - generating a fast general summary
 - asking questions grounded in document chunks
 
+Detailed project explanation:
+- See `PROJECT_SUMMARY.md` for architecture, flow, and stack rationale.
+- See `TECHNICAL_BREAKDOWN.md` for module-by-module, class-by-class, and function-by-function details.
+
 ## Stack
 - LLM Pipelines: modular ingestion, indexing, summarization
 - LangChain
@@ -45,7 +49,7 @@ python app.py
 Open: `http://127.0.0.1:7860`
 
 ## Performance Notes
-- Fast model default: `gemini-1.5-flash`
+- Fast model default: `gemini-2.5-flash`
 - MMR retrieval of representative chunks keeps prompts small and latency low
 - Document is indexed once per upload; summary and Q&A re-use the same FAISS index
 
